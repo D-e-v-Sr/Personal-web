@@ -10,7 +10,7 @@ import { MagneticButton } from "@/components/portfolio/magnetic-button";
 const socialLinks = [
   { label: "GitHub", href: "https://github.com/D-e-v-Sr", handle: "@D-e-v-Sr" },
   { label: "LinkedIn", href: "https://linkedin.com/in/sharafukp", handle: "/in/sharafukp" },
-  { label: "Whatsapp", href: "tel:+971543014975", handle: "+971 54 301 4975" },
+  { label: "Whatsapp", href: "https://wa.me/+971543014975", handle: "+971 54 301 4975" },
 ];
 
 export default function ContactPage() {
