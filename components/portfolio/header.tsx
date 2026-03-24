@@ -61,7 +61,7 @@ export function Header() {
                   isMenuOpen ? "text-background" : "text-foreground"
                 }`}
               >
-                Sharafudheen
+                Sharaf
               </span>
               <span
                 className={`text-[10px] uppercase tracking-[0.2em] transition-colors duration-300 ${

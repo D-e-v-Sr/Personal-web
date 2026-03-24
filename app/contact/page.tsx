@@ -1,16 +1,16 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { ArrowUpRight, Copy, Check } from "lucide-react";
+import { ArrowUpRight, Copy, Check, Github, Linkedin, Globe, MessageCircle } from "lucide-react";
 import { useState } from "react";
 import { Header } from "@/components/portfolio/header";
 import { PageTransition, FadeUp, LineReveal, TextReveal } from "@/components/portfolio/page-transition";
 import { MagneticButton } from "@/components/portfolio/magnetic-button";
 
 const socialLinks = [
-  { label: "GitHub", href: "https://github.com/D-e-v-Sr", handle: "@D-e-v-Sr" },
-  { label: "LinkedIn", href: "https://linkedin.com/in/sharafukp", handle: "/in/sharafukp" },
-  { label: "Whatsapp", href: "https://wa.me/+971543014975", handle: "+971 54 301 4975" },
+  { label: "GitHub", href: "https://github.com/D-e-v-Sr", handle: "@D-e-v-Sr", icon: Github },
+  { label: "LinkedIn", href: "https://linkedin.com/in/sharafukp", handle: "/in/sharafukp", icon: Linkedin },
+  { label: "WhatsApp", href: "https://wa.me/+971543014975", handle: "+971 54 301 4975", icon: MessageCircle },
 ];
 
 export default function ContactPage() {
@@ -114,6 +114,7 @@ export default function ContactPage() {
                     className="group space-y-2"
                   >
                     <div className="flex items-center gap-2">
+                      {link.icon && <link.icon className="w-4 h-4 text-muted-foreground" />}
                       <span className="text-sm font-medium group-hover:text-muted-foreground transition-colors">
                         {link.label}
                       </span>
@@ -133,7 +134,7 @@ export default function ContactPage() {
               className="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-4 py-8 border-t border-border"
             >
               <p className="text-sm text-muted-foreground">
-                © 2025 Mohammed Sharafudheen. All rights reserved.
+                © 2026 Sharaf. All rights reserved.
               </p>
               <div className="flex items-center gap-2">
                 <span className="text-sm text-muted-foreground">
