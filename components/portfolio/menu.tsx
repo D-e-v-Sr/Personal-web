@@ -93,14 +93,14 @@ export function Menu({ isOpen, onClose }: MenuProps) {
                     <Link
                       href={item.href}
                       onClick={onClose}
-                      className="group flex items-center gap-4 md:gap-8 py-1 md:py-2"
+                      className="group flex items-center gap-4 md:gap-8 py-1 md:py-2 cursor-pointer"
                     >
                       <span className="text-xs md:text-sm font-mono text-background/40">
                         {item.number}
                       </span>
                       <span className="relative">
                         <span
-                          className={`text-3xl md:text-5xl lg:text-6xl font-bold tracking-tighter transition-all duration-500 ${
+                          className={`text-2xl md:text-4xl lg:text-4xl font-bold tracking-tighter transition-all duration-500 ${
                             pathname === item.href
                               ? "text-background"
                               : "text-background/60 group-hover:text-background"
@@ -144,17 +144,17 @@ export function Menu({ isOpen, onClose }: MenuProps) {
             >
               <div className="space-y-0.5">
                 <p className="text-[10px] uppercase tracking-widest">Get in touch</p>
-                <p className="text-xs">hello@example.com</p>
+                <p className="text-xs">dev.sharafu@gmail.com</p>
               </div>
               <div className="flex gap-4">
-                <a href="https://github.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-background transition-colors">
+                <a href="https://github.com/D-e-v-Sr" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-background transition-colors cursor-pointer">
                   GitHub
                 </a>
-                <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-background transition-colors">
+                <a href="https://linkedin.com/in/sharafukp" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-background transition-colors cursor-pointer">
                   LinkedIn
                 </a>
-                <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-background transition-colors">
-                  Twitter
+                <a href="https://wa.me/+971543014975" target="_blank" rel="noopener noreferrer" className="text-xs hover:text-background transition-colors cursor-pointer">
+                  Whatsapp
                 </a>
               </div>
             </motion.div>

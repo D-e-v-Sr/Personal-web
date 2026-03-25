@@ -24,7 +24,7 @@ const projects = [
   {
     title: "Real Estate & Property Management Website",
     description: "Managed and maintained a real estate platform with accurate property listings, smooth functionality, and a seamless user experience for prospective clients.",
-    tags: ["WordPress", "PHP", "SEO", "DNS Management"],
+    tags: ["Next.js", "TypeScript", "Express.js", "GraphQL", "REST APIs"],
     year: "2024",
     link: "#",
   },
@@ -81,7 +81,7 @@ export default function WorkPage() {
                 >
                   <Link
                     href={project.link}
-                    className="group block py-8 md:py-12 hover:bg-secondary/30 -mx-6 px-6 md:-mx-12 md:px-12 transition-colors"
+                    className="group block py-8 md:py-12 hover:bg-secondary/30 -mx-6 px-6 md:-mx-12 md:px-12 transition-colors cursor-pointer"
                   >
                     <div className="grid md:grid-cols-[120px_1fr_auto] gap-4 md:gap-8 items-start">
                       <span className="text-sm text-muted-foreground font-mono">

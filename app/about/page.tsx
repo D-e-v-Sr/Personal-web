@@ -6,7 +6,7 @@ import { PageTransition, FadeUp, LineReveal } from "@/components/portfolio/page-
 
 const stats = [
   { number: "5+", label: "Years Experience" },
-  { number: "20+", label: "Websites Managed" },
+  { number: "50+", label: "Websites Managed" },
   { number: "4", label: "Companies Worked" },
 ];
 

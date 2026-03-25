@@ -23,11 +23,11 @@ export default function HomePage() {
               </FadeUp>
 
               <div className="space-y-2">
-                <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tighter leading-[0.85]">
-                  <div className="overflow-hidden">
+                <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter leading-[0.85]">
+                  <div>
                     <TextReveal delay={0.1}>Crafting</TextReveal>
                   </div>
-                  <div className="overflow-hidden">
+                  <div>
                     <TextReveal delay={0.2}>
                       <span className="text-muted-foreground italic font-light">digital</span>
                     </TextReveal>
@@ -50,7 +50,7 @@ export default function HomePage() {
                   <MagneticButton>
                     <Link
                       href="/work"
-                      className="group inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background text-sm font-medium rounded-full hover:bg-muted-foreground transition-colors"
+                      className="group inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background text-sm font-medium rounded-full hover:bg-muted-foreground transition-colors cursor-pointer"
                     >
                       View Work
                       <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
@@ -59,7 +59,7 @@ export default function HomePage() {
                   <MagneticButton>
                     <Link
                       href="/contact"
-                      className="group inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors"
+                      className="group inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors cursor-pointer"
                     >
                       <span className="relative">
                         Get in touch
@@ -74,7 +74,7 @@ export default function HomePage() {
 
           {/* Bottom Section */}
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mt-16">
-            <motion.div
+            {/* <motion.div
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 1, delay: 1 }}
@@ -89,7 +89,7 @@ export default function HomePage() {
               <span className="text-xs text-muted-foreground uppercase tracking-widest">
                 Scroll to explore
               </span>
-            </motion.div>
+            </motion.div> */}
 
             <motion.div
               initial={{ opacity: 0 }}

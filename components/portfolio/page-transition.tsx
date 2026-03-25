@@ -53,9 +53,9 @@ export function FadeUp({ children, delay = 0 }: PageTransitionProps & { delay?: 
   );
 }
 
-export function TextReveal({ children, delay = 0 }: { children: string; delay?: number }) {
+export function TextReveal({ children, delay = 0 }: { children: ReactNode; delay?: number }) {
   return (
-    <span className="inline-block overflow-hidden">
+    <span className="inline-block">
       <motion.span
         className="inline-block"
         initial={{ y: "100%" }}
