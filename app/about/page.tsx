@@ -7,7 +7,7 @@ import { PageTransition, FadeUp, LineReveal } from "@/components/portfolio/page-
 const stats = [
   { number: "5+", label: "Years Experience" },
   { number: "50+", label: "Websites Managed" },
-  { number: "4", label: "Companies Worked" },
+  { number: "5", label: "Companies Worked" },
 ];
 
 export default function AboutPage() {

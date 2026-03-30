@@ -23,7 +23,7 @@ export default function HomePage() {
               </FadeUp>
 
               <div className="space-y-2">
-                <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter leading-[0.85]">
+                <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tighter leading-[1] sm:leading-[0.85]">
                   <div>
                     <TextReveal delay={0.1}>Crafting</TextReveal>
                   </div>
