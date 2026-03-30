@@ -21,13 +21,13 @@ const skillCategories = [
 
 const experiences = [
   {
-    period: "Apr 2024 — Present",
+    period: "Apr 2024 — Mar 2026",
     role: "Full Stack Developer (Contract)",
     company: "Abdulla Al Arif Investment LLC · Dubai, UAE",
     description: "Architected internal web applications including an HR recruitment management system and IT asset management platform. Managed websites across 20+ group entities, implemented on-page SEO strategies, and administered web and application hosting environments.",
   },
   {
-    period: "Mar 2023 — Aug 2024",
+    period: "Mar 2023 — Oct 2024",
     role: "React JS Developer",
     company: "Soxo Tech LLC · Calicut, India",
     description: "Built responsive, accessible UIs using React.js and Next.js, translating UI/UX designs into pixel-perfect implementations. Integrated React apps with Firebase, authored unit and integration tests with Jest and Cypress, and developed RESTful APIs.",
