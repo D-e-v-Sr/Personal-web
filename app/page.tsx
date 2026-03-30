@@ -32,14 +32,14 @@ export default function HomePage() {
                       <span className="text-muted-foreground italic font-light">digital</span>
                     </TextReveal>
                   </div>
-                  <div className="overflow-hidden">
+                  <div>
                     <TextReveal delay={0.3}>experiences.</TextReveal>
                   </div>
                 </h1>
               </div>
 
               <FadeUp delay={0.5}>
-                <p className="text-muted-foreground text-base md:text-lg max-w-md leading-relaxed">
+                <p className="text-muted-foreground text-base md:text-md max-w-md leading-relaxed">
                   Building polished software and web experiences. 
                   Experimenting with magical details in user interfaces.
                 </p>

@@ -15,7 +15,7 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: 'Sharaf | Full Stack Developer',
-  description: 'Full-Stack Web Developer with 5+ years of experience building high-performance websites and web applications. Based in Dubai, UAE.',
+  description: 'Full-Stack Web Developer with 7+ years of experience building high-performance websites and web applications. Based in Dubai, UAE.',
   generator: 'v0.app',
   icons: {
     icon: [

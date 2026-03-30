@@ -5,7 +5,7 @@ import { Header } from "@/components/portfolio/header";
 import { PageTransition, FadeUp, LineReveal } from "@/components/portfolio/page-transition";
 
 const stats = [
-  { number: "5+", label: "Years Experience" },
+  { number: "77+", label: "Years Experience" },
   { number: "50+", label: "Websites Managed" },
   { number: "5", label: "Companies Worked" },
 ];
@@ -39,7 +39,7 @@ export default function AboutPage() {
               <div>
                 <FadeUp delay={0.4}>
                   <p className="text-2xl md:text-3xl lg:text-4xl font-light leading-relaxed text-balance">
-                    I{"'"}m a Full-Stack Web Developer with 5+ years of experience building
+                    I{"'"}m a Full-Stack Web Developer with 7+ years of experience building
                     high-performance websites and web applications that users love.
                   </p>
                 </FadeUp>
