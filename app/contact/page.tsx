@@ -3,15 +3,37 @@
 import { motion } from "framer-motion";
 import { ArrowUpRight, Copy, Check, Github, Linkedin, Globe, MessageCircle } from "lucide-react";
 import { useState } from "react";
+import { useForm } from "react-hook-form";
+import { zodResolver } from "@hookform/resolvers/zod";
+import { z } from "zod";
 import { Header } from "@/components/portfolio/header";
 import { PageTransition, FadeUp, LineReveal, TextReveal } from "@/components/portfolio/page-transition";
 import { MagneticButton } from "@/components/portfolio/magnetic-button";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import {
+  Form,
+  FormControl,
+  FormField,
+  FormItem,
+  FormLabel,
+  FormMessage,
+} from "@/components/ui/form";
 
 const socialLinks = [
   { label: "GitHub", href: "https://github.com/D-e-v-Sr", handle: "@D-e-v-Sr", icon: Github },
   { label: "LinkedIn", href: "https://linkedin.com/in/sharafukp", handle: "/in/sharafukp", icon: Linkedin },
   { label: "WhatsApp", href: "https://wa.me/+971543014975", handle: "+971 54 301 4975", icon: MessageCircle },
 ];
+
+const contactSchema = z.object({
+  name: z.string().min(1, "Name is required"),
+  email: z.string().email("Invalid email"),
+  message: z.string().min(10, "Message must be at least 10 characters"),
+});
+
+type ContactForm = z.infer<typeof contactSchema>;
 
 export default function ContactPage() {
   const [copied, setCopied] = useState(false);
@@ -21,6 +43,33 @@ export default function ContactPage() {
     await navigator.clipboard.writeText(email);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitMessage, setSubmitMessage] = useState("");
+
+  const form = useForm<ContactForm>({
+    resolver: zodResolver(contactSchema),
+  });
+
+  const onSubmit = async (data: ContactForm) => {
+    setIsSubmitting(true);
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(data),
+      });
+      if (response.ok) {
+        setSubmitMessage("Message sent successfully!");
+        reset();
+      } else {
+        setSubmitMessage("Failed to send message. Try again.");
+      }
+    } catch (error) {
+      setSubmitMessage("An error occurred. Please try again.");
+    }
+    setIsSubmitting(false);
   };
 
   return (
@@ -59,37 +108,68 @@ export default function ContactPage() {
                   </p>
                 </FadeUp>
 
-                {/* Email CTA */}
-                <FadeUp delay={0.5}>
-                  <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4 sm:gap-6">
-                    <MagneticButton>
-                      <a
-                        href={`mailto:${email}`}
-                        className="group inline-flex items-center gap-3 px-8 py-4 bg-foreground text-background text-lg font-medium rounded-full hover:bg-muted-foreground transition-colors"
-                      >
-                        Send an email
-                        <ArrowUpRight className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                      </a>
-                    </MagneticButton>
-
-                    <button
-                      onClick={copyEmail}
-                      className="group flex items-center gap-2 text-muted-foreground hover:text-foreground transition-colors"
-                    >
-                      {copied ? (
-                        <>
-                          <Check className="w-4 h-4" />
-                          <span className="text-sm">Copied!</span>
-                        </>
-                      ) : (
-                        <>
-                          <Copy className="w-4 h-4" />
-                          <span className="text-sm">{email}</span>
-                        </>
-                      )}
-                    </button>
-                  </div>
-                </FadeUp>
+                      {/* Contact Form */}
+                      <FadeUp delay={0.5}>
+                        <Form {...form}>
+                          <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6 max-w-md">
+                            <FormField
+                              control={form.control}
+                              name="name"
+                              render={({ field }) => (
+                                <FormItem>
+                                  <FormLabel>Name</FormLabel>
+                                  <FormControl>
+                                    <Input placeholder="Your name" {...field} />
+                                  </FormControl>
+                                  <FormMessage />
+                                </FormItem>
+                              )}
+                            />
+                            <FormField
+                              control={form.control}
+                              name="email"
+                              render={({ field }) => (
+                                <FormItem>
+                                  <FormLabel>Email</FormLabel>
+                                  <FormControl>
+                                    <Input placeholder="your.email@example.com" type="email" {...field} />
+                                  </FormControl>
+                                  <FormMessage />
+                                </FormItem>
+                              )}
+                            />
+                            <FormField
+                              control={form.control}
+                              name="message"
+                              render={({ field }) => (
+                                <FormItem>
+                                  <FormLabel>Message</FormLabel>
+                                  <FormControl>
+                                    <Textarea
+                                      placeholder="Your message..."
+                                      className="resize-none"
+                                      rows={4}
+                                      {...field}
+                                    />
+                                  </FormControl>
+                                  <FormMessage />
+                                </FormItem>
+                              )}
+                            />
+                            <MagneticButton>
+                              <Button
+                                type="submit"
+                                size="sm"
+                                disabled={isSubmitting}
+                                className="rounded-full"
+                              >
+                                {isSubmitting ? "Sending..." : "Send Message"}
+                              </Button>
+                            </MagneticButton>
+                            {submitMessage && <p className="text-sm">{submitMessage}</p>}
+                          </form>
+                        </Form>
+                      </FadeUp>
               </div>
             </div>
 

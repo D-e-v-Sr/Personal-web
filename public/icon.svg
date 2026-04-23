@@ -1,19 +1,6 @@
-<svg width="180" height="180" viewBox="0 0 180 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
   <style>
-    @media (prefers-color-scheme: light) {
-      .background { fill: #000000; }
-      .foreground { fill: #ffffff; }
-    }
-    @media (prefers-color-scheme: dark) {
-      .background { fill: #ffffff; }
-      .foreground { fill: #000000; }
-    }
+    text { font-family: monospace; font-size: 24px; fill: currentColor; text-anchor: middle; dominant-baseline: middle; }
   </style>
-  <rect class="background" width="180" height="180" rx="37" />
-  <g transform="translate(27, 27)">
-    <!-- Left curly brace -->
-    <path class="foreground" d="M45 18C30 18 18 30 18 45C18 55 23 63 30 68L25 78C15 70 8 58 8 45C8 25 25 8 45 8V18ZM45 108C60 108 72 96 72 81C72 71 67 63 60 58L65 48C75 56 82 68 82 81C82 101 65 118 45 118V108Z" />
-    <!-- Right curly brace -->
-    <path class="foreground" d="M81 18C96 18 108 30 108 45C108 55 103 63 96 68L101 78C111 70 118 58 118 45C118 25 101 8 81 8V18ZM81 108C66 108 54 96 54 81C54 71 59 63 66 58L61 48C51 56 44 68 44 81C44 101 61 118 81 118V108Z" />
-  </g>
+  <text x="16" y="16">{}</text>
 </svg>

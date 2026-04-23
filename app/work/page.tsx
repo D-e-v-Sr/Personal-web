@@ -99,7 +99,7 @@ export default function WorkPage() {
                           {project.tags.map((tag) => (
                             <span
                               key={tag}
-                              className="text-xs font-mono px-3 py-1 bg-secondary rounded-full"
+                              className="text-xs font-inter px-3 py-1 bg-secondary rounded-full"
                             >
                               {tag}
                             </span>
