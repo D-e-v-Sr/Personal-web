@@ -173,8 +173,6 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <LineReveal delay={0.7} />
-
             {/* Social Links */}
             <div className="py-12 md:py-16">
               <div className="grid sm:grid-cols-3 gap-8">

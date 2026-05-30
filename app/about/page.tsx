@@ -5,7 +5,7 @@ import { Header } from "@/components/portfolio/header";
 import { PageTransition, FadeUp, LineReveal } from "@/components/portfolio/page-transition";
 
 const stats = [
-  { number: "77+", label: "Years Experience" },
+  { number: "7+", label: "Years Experience" },
   { number: "50+", label: "Websites Managed" },
   { number: "5", label: "Companies Worked" },
 ];
@@ -102,7 +102,7 @@ export default function AboutPage() {
             <LineReveal delay={1.2} />
 
             {/* Philosophy */}
-            <div className="py-16 md:py-24">
+            {/* <div className="py-16 md:py-24">
               <FadeUp delay={1.3}>
                 <p className="text-xs text-muted-foreground uppercase tracking-widest mb-6">
                   Philosophy
@@ -116,7 +116,7 @@ export default function AboutPage() {
                   </footer>
                 </blockquote>
               </FadeUp>
-            </div>
+            </div> */}
           </div>
         </main>
       </PageTransition>
