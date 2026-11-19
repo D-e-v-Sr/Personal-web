@@ -14,6 +14,7 @@ import {
   Github,
   Globe,
   Layers,
+  Layout,
   MonitorSmartphone,
   Network,
   Package,

@@ -43,8 +43,8 @@ export type BudgetValue = (typeof budgetOptions)[number]['value'];
 export type TimelineValue = (typeof timelineOptions)[number]['value'];
 export type ContactMethodValue = (typeof contactMethodOptions)[number]['value'];
 
-const valuesOf = <T extends readonly { value: string }[]>(options: T) =>
-  options.map((option) => option.value);
+const valuesOf = <T extends readonly { value: string }[]>(options: T): readonly [string, ...string[]] =>
+  options.map((option) => option.value) as unknown as readonly [string, ...string[]];
 
 /** Shared short-message helper so every field reports failures consistently. */
 const text = (label: string, min: number, max: number) =>
@@ -75,22 +75,22 @@ export const contactSchema = z.object({
     .email('Enter a valid email address'),
   company: optionalText(120, 'Company'),
   projectType: z.enum(valuesOf(projectTypeOptions), {
-    errorMap: { message: 'Choose a project type' },
+    errorMap: () => ({ message: 'Choose a project type' }),
   }),
   budget: z.union([
     z.literal(''),
-    z.enum(valuesOf(budgetOptions), { errorMap: { message: 'Choose a budget range' } }),
+    z.enum(valuesOf(budgetOptions), { errorMap: () => ({ message: 'Choose a budget range' }) }),
   ]),
   timeline: z.union([
     z.literal(''),
-    z.enum(valuesOf(timelineOptions), { errorMap: { message: 'Choose a timeline' } }),
+    z.enum(valuesOf(timelineOptions), { errorMap: () => ({ message: 'Choose a timeline' }) }),
   ]),
   message: text('Message', 20, 5000),
   whatsapp: optionalText(40, 'WhatsApp number'),
   preferredMethod: z.union([
     z.literal(''),
     z.enum(valuesOf(contactMethodOptions), {
-      errorMap: { message: 'Choose a preferred contact method' },
+      errorMap: () => ({ message: 'Choose a preferred contact method' }),
     }),
   ]),
   /**
@@ -98,7 +98,7 @@ export const contactSchema = z.object({
    * screen reader never announces it. Must arrive empty.
    */
   company_website: z.literal('', {
-    errorMap: { message: 'Submission rejected' },
+    errorMap: () => ({ message: 'Submission rejected' }),
   }),
 });
 
@@ -106,7 +106,7 @@ export type ContactFormValues = z.infer<typeof contactSchema>;
 
 export type ContactField = keyof ContactFormValues;
 
-/** The nine visible fields, in tab order. */
+/** Field-level errors keyed by field name — safe to send to the client. */
 export const contactFieldNames: ContactField[] = [
   'name',
   'email',
