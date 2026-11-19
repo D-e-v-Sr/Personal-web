@@ -1,0 +1,130 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 1000" width="1600" height="1000" role="img">
+
+  <style>
+    .bg{fill:##F4F2EE}
+    .panel{fill:##FBFAF7}
+    .grid{stroke:##E4E1D9}
+    .line{stroke:##D5D1C7;fill:none}
+    .strong{stroke:##B9B4A8;fill:none}
+    .ink{fill:##2A2824}
+    .soft{fill:##8C8880}
+    .accent-fill{fill:##3A3FE0}
+    .accent-stroke{stroke:##3A3FE0;fill:none}
+    .chip{fill:##F4F2EE;stroke:##D5D1C7}
+    .wash{fill:##3A3FE0;opacity:.07}
+    @media (prefers-color-scheme: dark){
+      .bg{fill:##1A1917}
+      .panel{fill:##201F1C}
+      .grid{stroke:##2B2A26}
+      .line{stroke:##33312C;fill:none}
+      .strong{stroke:##4A4841;fill:none}
+      .ink{fill:##EDE9E1}
+      .soft{fill:##8C8880}
+      .accent-fill{fill:##8D93FF}
+      .accent-stroke{stroke:##8D93FF;fill:none}
+      .chip{fill:##1A1917;stroke:##33312C}
+      .wash{fill:##8D93FF;opacity:.14}
+    }
+  </style>
+
+  <rect width="1600" height="1000" class="bg"/>
+  <g aria-hidden="true"><line x1="80" y1="0" x2="80" y2="1000" class="grid" stroke-width="1"/><line x1="160" y1="0" x2="160" y2="1000" class="grid" stroke-width="1"/><line x1="240" y1="0" x2="240" y2="1000" class="grid" stroke-width="1"/><line x1="320" y1="0" x2="320" y2="1000" class="grid" stroke-width="1"/><line x1="400" y1="0" x2="400" y2="1000" class="grid" stroke-width="1"/><line x1="480" y1="0" x2="480" y2="1000" class="grid" stroke-width="1"/><line x1="560" y1="0" x2="560" y2="1000" class="grid" stroke-width="1"/><line x1="640" y1="0" x2="640" y2="1000" class="grid" stroke-width="1"/><line x1="720" y1="0" x2="720" y2="1000" class="grid" stroke-width="1"/><line x1="800" y1="0" x2="800" y2="1000" class="grid" stroke-width="1"/><line x1="880" y1="0" x2="880" y2="1000" class="grid" stroke-width="1"/><line x1="960" y1="0" x2="960" y2="1000" class="grid" stroke-width="1"/><line x1="1040" y1="0" x2="1040" y2="1000" class="grid" stroke-width="1"/><line x1="1120" y1="0" x2="1120" y2="1000" class="grid" stroke-width="1"/><line x1="1200" y1="0" x2="1200" y2="1000" class="grid" stroke-width="1"/><line x1="1280" y1="0" x2="1280" y2="1000" class="grid" stroke-width="1"/><line x1="1360" y1="0" x2="1360" y2="1000" class="grid" stroke-width="1"/><line x1="1440" y1="0" x2="1440" y2="1000" class="grid" stroke-width="1"/><line x1="1520" y1="0" x2="1520" y2="1000" class="grid" stroke-width="1"/><line x1="0" y1="80" x2="1600" y2="80" class="grid" stroke-width="1"/><line x1="0" y1="160" x2="1600" y2="160" class="grid" stroke-width="1"/><line x1="0" y1="240" x2="1600" y2="240" class="grid" stroke-width="1"/><line x1="0" y1="320" x2="1600" y2="320" class="grid" stroke-width="1"/><line x1="0" y1="400" x2="1600" y2="400" class="grid" stroke-width="1"/><line x1="0" y1="480" x2="1600" y2="480" class="grid" stroke-width="1"/><line x1="0" y1="560" x2="1600" y2="560" class="grid" stroke-width="1"/><line x1="0" y1="640" x2="1600" y2="640" class="grid" stroke-width="1"/><line x1="0" y1="720" x2="1600" y2="720" class="grid" stroke-width="1"/><line x1="0" y1="800" x2="1600" y2="800" class="grid" stroke-width="1"/><line x1="0" y1="880" x2="1600" y2="880" class="grid" stroke-width="1"/><line x1="0" y1="960" x2="1600" y2="960" class="grid" stroke-width="1"/></g>
+  <rect x="0" y="0" width="1600" height="76" class="panel"/>
+  <line x1="0" y1="76" x2="1600" y2="76" class="line"/>
+  <rect x="48" y="30" width="230" height="18" rx="9" class="wash"/>
+  <text x="56" y="44" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="14" font-weight="500" letter-spacing="1.6" text-anchor="start">SEARCH / LISTINGS</text>
+  <text x="1552" y="44" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="end">1,204 RESULTS</text>
+  <rect x="48" y="120" width="316" height="820" rx="14" class="panel"/>
+  <text x="80" y="168" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">REFINE</text>
+  <rect x="80" y="204" width="252" height="62" rx="10" class="chip"/>
+         <text x="100" y="242" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">LOCATION</text>
+         <line x1="300" y1="224" x2="312" y2="244" class="strong"/>
+         <line x1="300" y1="244" x2="312" y2="224" class="strong"/><rect x="80" y="296" width="252" height="62" rx="10" class="chip"/>
+         <text x="100" y="242" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">PROPERTY TYPE</text>
+         <line x1="300" y1="316" x2="312" y2="336" class="strong"/>
+         <line x1="300" y1="336" x2="312" y2="316" class="strong"/><rect x="80" y="388" width="252" height="62" rx="10" class="chip"/>
+         <text x="100" y="242" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">BEDROOMS</text>
+         <line x1="300" y1="408" x2="312" y2="428" class="strong"/>
+         <line x1="300" y1="428" x2="312" y2="408" class="strong"/><rect x="80" y="480" width="252" height="62" rx="10" class="chip"/>
+         <text x="100" y="242" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">PRICE RANGE</text>
+         <line x1="300" y1="500" x2="312" y2="520" class="strong"/>
+         <line x1="300" y1="520" x2="312" y2="500" class="strong"/><rect x="80" y="572" width="252" height="62" rx="10" class="chip"/>
+         <text x="100" y="242" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">AMENITIES</text>
+         <line x1="300" y1="592" x2="312" y2="612" class="strong"/>
+         <line x1="300" y1="612" x2="312" y2="592" class="strong"/><rect x="80" y="664" width="252" height="62" rx="10" class="chip"/>
+         <text x="100" y="242" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">AVAILABILITY</text>
+         <line x1="300" y1="684" x2="312" y2="704" class="strong"/>
+         <line x1="300" y1="704" x2="312" y2="684" class="strong"/>
+  <text x="420" y="180" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">FEATURED LISTINGS</text>
+  <line x1="420" y1="212" x2="1552" y2="212" class="line"/>
+  <text x="1552" y="180" class="accent-fill" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="end">SORT: RECENT</text>
+  
+    <g>
+      <rect x="420" y="300" width="336" height="272" rx="14" class="panel"/>
+      <rect x="421" y="301" width="334" height="164" rx="13" class="chip"/>
+      <line x1="444" y1="448" x2="732" y2="448" class="line"/>
+      <line x1="444" y1="396" x2="620" y2="396" class="line"/>
+      <rect x="444" y="330" width="64" height="20" rx="10" class="accent-fill"/>
+      <text x="460" y="345" class="panel" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" font-weight="700" letter-spacing="1.6" text-anchor="start">NEW</text>
+      <text x="444" y="490" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">PROPERTY 01</text>
+      <text x="444" y="524" class="ink" font-family="ui-sans-serif,system-ui" font-size="24" font-weight="600" letter-spacing="-0.6">Marina Residence</text>
+      <text x="444" y="552" class="soft" font-family="ui-sans-serif,system-ui" font-size="18">2 bed · Marina</text>
+    </g>
+    <g>
+      <rect x="792" y="300" width="336" height="272" rx="14" class="panel"/>
+      <rect x="793" y="301" width="334" height="164" rx="13" class="chip"/>
+      <line x1="816" y1="448" x2="1104" y2="448" class="line"/>
+      <line x1="816" y1="396" x2="992" y2="396" class="line"/>
+      <rect x="816" y="330" width="64" height="20" rx="10" class="accent-fill"/>
+      <text x="832" y="345" class="panel" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" font-weight="700" letter-spacing="1.6" text-anchor="start">SOLD</text>
+      <text x="816" y="490" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">PROPERTY 02</text>
+      <text x="816" y="524" class="ink" font-family="ui-sans-serif,system-ui" font-size="24" font-weight="600" letter-spacing="-0.6">Business Bay Tower</text>
+      <text x="816" y="552" class="soft" font-family="ui-sans-serif,system-ui" font-size="18">3 bed · Business Bay</text>
+    </g>
+    <g>
+      <rect x="1164" y="300" width="336" height="272" rx="14" class="panel"/>
+      <rect x="1165" y="301" width="334" height="164" rx="13" class="chip"/>
+      <line x1="1188" y1="448" x2="1476" y2="448" class="line"/>
+      <line x1="1188" y1="396" x2="1364" y2="396" class="line"/>
+      <rect x="1188" y="330" width="64" height="20" rx="10" class="accent-fill"/>
+      <text x="1204" y="345" class="panel" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" font-weight="700" letter-spacing="1.6" text-anchor="start">SOLD</text>
+      <text x="1188" y="490" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">PROPERTY 03</text>
+      <text x="1188" y="524" class="ink" font-family="ui-sans-serif,system-ui" font-size="24" font-weight="600" letter-spacing="-0.6">Jumeirah Villa</text>
+      <text x="1188" y="552" class="soft" font-family="ui-sans-serif,system-ui" font-size="18">4 bed · Jumeirah</text>
+    </g>
+    <g>
+      <rect x="420" y="616" width="336" height="272" rx="14" class="panel"/>
+      <rect x="421" y="617" width="334" height="164" rx="13" class="chip"/>
+      <line x1="444" y1="764" x2="732" y2="764" class="line"/>
+      <line x1="444" y1="712" x2="620" y2="712" class="line"/>
+      <rect x="444" y="646" width="64" height="20" rx="10" class="accent-fill"/>
+      <text x="460" y="661" class="panel" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" font-weight="700" letter-spacing="1.6" text-anchor="start">SOLD</text>
+      <text x="444" y="806" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">PROPERTY 04</text>
+      <text x="444" y="840" class="ink" font-family="ui-sans-serif,system-ui" font-size="24" font-weight="600" letter-spacing="-0.6">Downtown Studio</text>
+      <text x="444" y="868" class="soft" font-family="ui-sans-serif,system-ui" font-size="18">1 bed · Downtown</text>
+    </g>
+    <g>
+      <rect x="792" y="616" width="336" height="272" rx="14" class="panel"/>
+      <rect x="793" y="617" width="334" height="164" rx="13" class="chip"/>
+      <line x1="816" y1="764" x2="1104" y2="764" class="line"/>
+      <line x1="816" y1="712" x2="992" y2="712" class="line"/>
+      <rect x="816" y="646" width="64" height="20" rx="10" class="accent-fill"/>
+      <text x="832" y="661" class="panel" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" font-weight="700" letter-spacing="1.6" text-anchor="start">SOLD</text>
+      <text x="816" y="806" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">PROPERTY 05</text>
+      <text x="816" y="840" class="ink" font-family="ui-sans-serif,system-ui" font-size="24" font-weight="600" letter-spacing="-0.6">Arabian Sea View</text>
+      <text x="816" y="868" class="soft" font-family="ui-sans-serif,system-ui" font-size="18">3 bed · Arabian Sea</text>
+    </g>
+    <g>
+      <rect x="1164" y="616" width="336" height="272" rx="14" class="panel"/>
+      <rect x="1165" y="617" width="334" height="164" rx="13" class="chip"/>
+      <line x1="1188" y1="764" x2="1476" y2="764" class="line"/>
+      <line x1="1188" y1="712" x2="1364" y2="712" class="line"/>
+      <rect x="1188" y="646" width="64" height="20" rx="10" class="accent-fill"/>
+      <text x="1204" y="661" class="panel" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" font-weight="700" letter-spacing="1.6" text-anchor="start">SOLD</text>
+      <text x="1188" y="806" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">PROPERTY 06</text>
+      <text x="1188" y="840" class="ink" font-family="ui-sans-serif,system-ui" font-size="24" font-weight="600" letter-spacing="-0.6">Al Barsha Garden</text>
+      <text x="1188" y="868" class="soft" font-family="ui-sans-serif,system-ui" font-size="18">2 bed · Al Barsha</text>
+    </g>
+  <rect x="420" y="932" width="640" height="2" rx="1" class="wash"/>
+  <text x="1100" y="180" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="end">GRAPHQL + REST</text>
+</svg>

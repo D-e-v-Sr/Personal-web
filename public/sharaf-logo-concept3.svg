@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" fill="none">
+  <defs>
+    <style>
+      .path-main { fill: currentColor; }
+    </style>
+  </defs>
+  
+  <!-- S - Monoline digital path with precise pixel-perfect cuts -->
+  <g transform="translate(0, 0)">
+    <!-- Single continuous path with digital corner cuts -->
+    <path class="path-main" d="M64 16 
+      H16 
+      C8 16, 0 24, 0 32 
+      V48 
+      H48 
+      C56 48, 64 40, 64 32 
+      C64 24, 56 16, 48 16 
+      H16 
+      V80 
+      H48 
+      C56 80, 64 88, 64 96 
+      C64 104, 56 112, 48 112 
+      H16 
+      C8 112, 0 120, 0 128 
+      V144 
+      H64 
+      C72 144, 80 136, 80 128 
+      C80 120, 72 112, 64 112 Z"/>
+    <!-- Negative space cut - digital notch -->
+    <rect x="8" y="40" width="4" height="32" fill="#fff"/>
+    <rect x="68" y="88" width="4" height="32" fill="#fff"/>
+  </g>
+  
+  <!-- H - Minimal structural with precise negative space -->
+  <g transform="translate(100, 0)">
+    <!-- Left stem -->
+    <path class="path-main" d="M0 16 
+      L0 144 
+      L10 144 
+      L10 16 
+      L0 16 Z"/>
+    <!-- Right stem -->
+    <path class="path-main" d="M50 16 
+      L50 144 
+      L60 144 
+      L60 16 
+      L50 16 Z"/>
+    <!-- Crossbar - perfectly centered with micro gaps -->
+    <path class="path-main" d="M10 70 
+      L50 70 
+      L50 90 
+      L10 90 
+      L10 70 Z"/>
+    <!-- Digital negative space cuts - like cursor positions -->
+    <rect x="20" y="70" width="2" height="20" fill="#fff"/>
+    <rect x="38" y="70" width="2" height="20" fill="#fff"/>
+  </g>
+  
+  <!-- A - Sharp digital geometry with inverted counter -->
+  <g transform="translate(175, 0)">
+    <!-- Outer shape -->
+    <path class="path-main" d="M30 144 
+      L20 144 
+      L2 16 
+      L12 16 
+      L22 44 
+      L22 144 Z"/>
+    <path class="path-main" d="M38 144 
+      L48 144 
+      L58 16 
+      L48 16 
+      L38 44 
+      L38 144 Z"/>
+    <!-- Crossbar with pixel-perfect cut -->
+    <path class="path-main" d="M14 68 
+      L18 68 
+      L42 36 
+      L46 36 
+      L46 28 
+      L42 28 
+      L18 60 
+      L14 60 Z"/>
+    <!-- Inverted counter - negative space triangle -->
+    <polygon points="22,44 38,44 30,16" fill="#fff"/>
+  </g>
+  
+  <!-- R - Clean with distinctive diagonal leg and counter cut -->
+  <g transform="translate(250, 0)">
+    <!-- Vertical stem -->
+    <path class="path-main" d="M0 16 
+      L10 16 
+      L10 144 
+      L0 144 
+      L0 16 Z"/>
+    <!-- Bowl with digital corner -->
+    <path class="path-main" d="M10 16 
+      L40 16 
+      L50 26 
+      L50 70 
+      L28 70 
+      L20 62 
+      L20 42 
+      L28 34 
+      L10 34 
+      L10 16 Z"/>
+    <!-- Counter - precise rectangular cut -->
+    <rect x="16" y="34" width="10" height="28" fill="#fff"/>
+    <!-- Leg - clean diagonal with square terminal -->
+    <path class="path-main" d="M20 70 
+      L28 70 
+      L46 144 
+      L54 144 
+      L36 70 
+      L20 70 Z"/>
+  </g>
+  
+  <!-- A (second) - Identical to first for visual rhythm -->
+  <g transform="translate(325, 0)">
+    <path class="path-main" d="M30 144 
+      L20 144 
+      L2 16 
+      L12 16 
+      L22 44 
+      L22 144 Z"/>
+    <path class="path-main" d="M38 144 
+      L48 144 
+      L58 16 
+      L48 16 
+      L38 44 
+      L38 144 Z"/>
+    <path class="path-main" d="M14 68 
+      L18 68 
+      L42 36 
+      L46 36 
+      L46 28 
+      L42 28 
+      L18 60 
+      L14 60 Z"/>
+    <polygon points="22,44 38,44 30,16" fill="#fff"/>
+  </g>
+  
+  <!-- F - Minimal with precise alignment -->
+  <g transform="translate(400, 0)">
+    <!-- Vertical stem -->
+    <path class="path-main" d="M0 16 
+      L10 16 
+      L10 144 
+      L0 144 
+      L0 16 Z"/>
+    <!-- Top bar - aligned to grid -->
+    <path class="path-main" d="M10 16 
+      L50 16 
+      L50 36 
+      L10 36 
+      L10 16 Z"/>
+    <!-- Middle bar - shorter, aligned -->
+    <path class="path-main" d="M10 76 
+      L42 76 
+      L42 96 
+      L10 96 
+      L10 76 Z"/>
+    <!-- Micro negative space cuts -->
+    <rect x="20" y="16" width="2" height="20" fill="#fff"/>
+    <rect x="20" y="76" width="2" height="20" fill="#fff"/>
+  </g>
+</svg>

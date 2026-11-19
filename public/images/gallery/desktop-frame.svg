@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" width="1440" height="900" role="img">
+
+  <style>
+    .bg{fill:##F4F2EE}
+    .panel{fill:##FBFAF7}
+    .grid{stroke:##E4E1D9}
+    .line{stroke:##D5D1C7;fill:none}
+    .strong{stroke:##B9B4A8;fill:none}
+    .ink{fill:##2A2824}
+    .soft{fill:##8C8880}
+    .accent-fill{fill:##3A3FE0}
+    .accent-stroke{stroke:##3A3FE0;fill:none}
+    .chip{fill:##F4F2EE;stroke:##D5D1C7}
+    .wash{fill:##3A3FE0;opacity:.07}
+    @media (prefers-color-scheme: dark){
+      .bg{fill:##1A1917}
+      .panel{fill:##201F1C}
+      .grid{stroke:##2B2A26}
+      .line{stroke:##33312C;fill:none}
+      .strong{stroke:##4A4841;fill:none}
+      .ink{fill:##EDE9E1}
+      .soft{fill:##8C8880}
+      .accent-fill{fill:##8D93FF}
+      .accent-stroke{stroke:##8D93FF;fill:none}
+      .chip{fill:##1A1917;stroke:##33312C}
+      .wash{fill:##8D93FF;opacity:.14}
+    }
+  </style>
+
+  <rect width="1440" height="900" class="bg"/>
+  <g aria-hidden="true"><line x1="80" y1="0" x2="80" y2="900" class="grid" stroke-width="1"/><line x1="160" y1="0" x2="160" y2="900" class="grid" stroke-width="1"/><line x1="240" y1="0" x2="240" y2="900" class="grid" stroke-width="1"/><line x1="320" y1="0" x2="320" y2="900" class="grid" stroke-width="1"/><line x1="400" y1="0" x2="400" y2="900" class="grid" stroke-width="1"/><line x1="480" y1="0" x2="480" y2="900" class="grid" stroke-width="1"/><line x1="560" y1="0" x2="560" y2="900" class="grid" stroke-width="1"/><line x1="640" y1="0" x2="640" y2="900" class="grid" stroke-width="1"/><line x1="720" y1="0" x2="720" y2="900" class="grid" stroke-width="1"/><line x1="800" y1="0" x2="800" y2="900" class="grid" stroke-width="1"/><line x1="880" y1="0" x2="880" y2="900" class="grid" stroke-width="1"/><line x1="960" y1="0" x2="960" y2="900" class="grid" stroke-width="1"/><line x1="1040" y1="0" x2="1040" y2="900" class="grid" stroke-width="1"/><line x1="1120" y1="0" x2="1120" y2="900" class="grid" stroke-width="1"/><line x1="1200" y1="0" x2="1200" y2="900" class="grid" stroke-width="1"/><line x1="1280" y1="0" x2="1280" y2="900" class="grid" stroke-width="1"/><line x1="1360" y1="0" x2="1360" y2="900" class="grid" stroke-width="1"/><line x1="0" y1="80" x2="1440" y2="80" class="grid" stroke-width="1"/><line x1="0" y1="160" x2="1440" y2="160" class="grid" stroke-width="1"/><line x1="0" y1="240" x2="1440" y2="240" class="grid" stroke-width="1"/><line x1="0" y1="320" x2="1440" y2="320" class="grid" stroke-width="1"/><line x1="0" y1="400" x2="1440" y2="400" class="grid" stroke-width="1"/><line x1="0" y1="480" x2="1440" y2="480" class="grid" stroke-width="1"/><line x1="0" y1="560" x2="1440" y2="560" class="grid" stroke-width="1"/><line x1="0" y1="640" x2="1440" y2="640" class="grid" stroke-width="1"/><line x1="0" y1="720" x2="1440" y2="720" class="grid" stroke-width="1"/><line x1="0" y1="800" x2="1440" y2="800" class="grid" stroke-width="1"/><line x1="0" y1="880" x2="1440" y2="880" class="grid" stroke-width="1"/></g>
+  <rect x="40" y="40" width="1360" height="820" rx="16" class="panel"/>
+  <rect x="40" y="40" width="1360" height="56" rx="16" class="chip"/>
+  <rect x="40" y="72" width="1360" height="24" class="chip"/>
+  <circle cx="72" cy="68" r="7" class="soft"/><circle cx="96" cy="68" r="7" class="soft"/><circle cx="120" cy="68" r="7" class="soft"/>
+  <line x1="40" y1="96" x2="1400" y2="96" class="line"/>
+  <line x1="300" y1="96" x2="300" y2="860" class="line"/>
+  <text x="72" y="132" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">DASHBOARD</text>
+  <text x="340" y="132" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12" font-weight="500" letter-spacing="1.6" text-anchor="start">CONTENT</text>
+  <rect x="340" y="164" width="380" height="18" rx="9" class="ink"/>
+  <rect x="340" y="200" width="600" height="10" rx="5" class="wash"/>
+  <rect x="340" y="222" width="520" height="10" rx="5" class="wash"/>
+  <rect x="340" y="244" width="440" height="10" rx="5" class="wash"/>
+  <rect x="340" y="288" width="196" height="44" rx="22" class="accent-fill"/>
+  <rect x="340" y="380" width="300" height="280" rx="12" class="chip"/>
+  <rect x="676" y="380" width="300" height="280" rx="12" class="chip"/>
+  <rect x="1012" y="380" width="300" height="280" rx="12" class="chip"/>
+  <text x="360" y="700" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="500" letter-spacing="1.6" text-anchor="start">03 COLUMNS</text>
+  <text x="696" y="700" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="500" letter-spacing="1.6" text-anchor="start">12 ROWS</text>
+  <text x="1032" y="700" class="soft" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="500" letter-spacing="1.6" text-anchor="start">DETAIL</text>
+  <rect x="340" y="716" width="972" height="2" rx="1" class="wash"/>
+  <text x="340" y="760" class="accent-fill" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="11" font-weight="500" letter-spacing="1.6" text-anchor="start">DESKTOP · 1440PX</text>
+</svg>

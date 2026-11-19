@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, useMotionValue, useSpring, useTransform } from "framer-motion";
+import { motion, useMotionValue, useReducedMotion, useSpring } from "framer-motion";
 import { ReactNode, useRef } from "react";
 
 interface MagneticButtonProps {
@@ -11,7 +11,7 @@ interface MagneticButtonProps {
 
 export function MagneticButton({ children, className = "", strength = 0.3 }: MagneticButtonProps) {
   const ref = useRef<HTMLDivElement>(null);
-  
+  const shouldReduceMotion = useReducedMotion();
   const x = useMotionValue(0);
   const y = useMotionValue(0);
 
@@ -19,18 +19,15 @@ export function MagneticButton({ children, className = "", strength = 0.3 }: Mag
   const springX = useSpring(x, springConfig);
   const springY = useSpring(y, springConfig);
 
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (!ref.current) return;
-    
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    if (!ref.current || shouldReduceMotion) return;
+
     const rect = ref.current.getBoundingClientRect();
     const centerX = rect.left + rect.width / 2;
     const centerY = rect.top + rect.height / 2;
-    
-    const deltaX = (e.clientX - centerX) * strength;
-    const deltaY = (e.clientY - centerY) * strength;
-    
-    x.set(deltaX);
-    y.set(deltaY);
+
+    x.set((event.clientX - centerX) * strength);
+    y.set((event.clientY - centerY) * strength);
   };
 
   const handleMouseLeave = () => {
@@ -44,6 +41,8 @@ export function MagneticButton({ children, className = "", strength = 0.3 }: Mag
       style={{ x: springX, y: springY }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
+      whileHover={shouldReduceMotion ? undefined : { scale: 1.025 }}
+      whileTap={shouldReduceMotion ? undefined : { scale: 0.98 }}
       className={className}
     >
       {children}

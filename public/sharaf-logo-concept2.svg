@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 160" fill="none">
+  <defs>
+    <style>
+      .path-main { fill: currentColor; }
+    </style>
+  </defs>
+  
+  <!-- S - Geometric with angle bracket terminals -->
+  <g transform="translate(0, 0)">
+    <!-- Top horizontal with < terminal -->
+    <path class="path-main" d="M16 20 
+      L64 20 
+      L72 28 
+      L64 36 
+      L16 36 
+      L8 28 
+      L16 20 Z"/>
+    <!-- Middle connection -->
+    <path class="path-main" d="M16 68 
+      L48 68 
+      L56 76 
+      L48 84 
+      L16 84 
+      L8 76 
+      L16 68 Z"/>
+    <!-- Bottom horizontal with > terminal -->
+    <path class="path-main" d="M8 124 
+      L56 124 
+      L64 132 
+      L56 140 
+      L8 140 
+      L16 132 
+      L8 124 Z"/>
+    <!-- Vertical spine connectors -->
+    <path class="path-main" d="M16 36 
+      L16 68 
+      L24 68 
+      L24 36 Z"/>
+    <path class="path-main" d="M48 68 
+      L48 84 
+      L56 84 
+      L56 68 Z"/>
+  </g>
+  
+  <!-- H - Bracket geometry, { } inspired verticals -->
+  <g transform="translate(100, 0)">
+    <!-- Left vertical with curly brace terminals -->
+    <path class="path-main" d="M0 16 
+      L8 16 
+      L8 28 
+      L0 28 
+      L0 16 Z"/>
+    <path class="path-main" d="M0 132 
+      L8 132 
+      L8 144 
+      L0 144 
+      L0 132 Z"/>
+    <path class="path-main" d="M0 28 
+      L10 28 
+      L10 132 
+      L0 132 Z"/>
+    <!-- Right vertical with curly brace terminals -->
+    <path class="path-main" d="M50 16 
+      L58 16 
+      L58 28 
+      L50 28 
+      L50 16 Z"/>
+    <path class="path-main" d="M50 132 
+      L58 132 
+      L58 144 
+      L50 144 
+      L50 132 Z"/>
+    <path class="path-main" d="M48 28 
+      L58 28 
+      L58 132 
+      L48 132 Z"/>
+    <!-- Crossbar - angle bracket style -->
+    <path class="path-main" d="M10 70 
+      L22 70 
+      L28 64 
+      L22 58 
+      L10 58 
+      L4 64 
+      L10 70 Z"/>
+    <path class="path-main" d="M48 70 
+      L36 70 
+      L30 64 
+      L36 58 
+      L48 58 
+      L54 64 
+      L48 70 Z"/>
+  </g>
+  
+  <!-- A - Angular with slash-inspired crossbar -->
+  <g transform="translate(175, 0)">
+    <!-- Left stem with angled cut -->
+    <path class="path-main" d="M0 144 
+      L8 144 
+      L24 24 
+      L16 24 
+      L0 48 
+      L0 144 Z"/>
+    <!-- Right stem with angled cut -->
+    <path class="path-main" d="M58 144 
+      L50 144 
+      L34 24 
+      L42 24 
+      L58 48 
+      L58 144 Z"/>
+    <!-- Crossbar - slash/forward-slash inspired diagonal -->
+    <path class="path-main" d="M12 72 
+      L28 72 
+      L44 48 
+      L44 40 
+      L28 64 
+      L12 64 Z"/>
+    <!-- Apex bracket hint -->
+    <path class="path-main" d="M24 24 
+      L34 24 
+      L29 16 
+      L24 24 Z"/>
+  </g>
+  
+  <!-- R - Angle bracket bowl with code-path leg -->
+  <g transform="translate(250, 0)">
+    <!-- Vertical stem with bracket terminals -->
+    <path class="path-main" d="M0 16 
+      L8 16 
+      L8 144 
+      L0 144 
+      L0 16 Z"/>
+    <!-- Bowl - angular bracket form -->
+    <path class="path-main" d="M8 16 
+      L40 16 
+      L48 24 
+      L48 64 
+      L24 64 
+      L16 56 
+      L16 40 
+      L24 32 
+      L8 32 
+      L8 16 Z"/>
+    <!-- Inner counter cut -->
+    <path class="path-main" fill="#fff" d="M16 32 
+      L24 32 
+      L30 38 
+      L30 56 
+      L24 62 
+      L16 62 
+      L16 32 Z"/>
+    <!-- Leg - diagonal path with terminal -->
+    <path class="path-main" d="M16 64 
+      L24 64 
+      L44 144 
+      L52 144 
+      L32 64 
+      L16 64 Z"/>
+  </g>
+  
+  <!-- A (second) - Matching first A -->
+  <g transform="translate(325, 0)">
+    <path class="path-main" d="M0 144 
+      L8 144 
+      L24 24 
+      L16 24 
+      L0 48 
+      L0 144 Z"/>
+    <path class="path-main" d="M58 144 
+      L50 144 
+      L34 24 
+      L42 24 
+      L58 48 
+      L58 144 Z"/>
+    <path class="path-main" d="M12 72 
+      L28 72 
+      L44 48 
+      L44 40 
+      L28 64 
+      L12 64 Z"/>
+    <path class="path-main" d="M24 24 
+      L34 24 
+      L29 16 
+      L24 24 Z"/>
+  </g>
+  
+  <!-- F - Terminal-inspired with bracket terminals -->
+  <g transform="translate(400, 0)">
+    <!-- Vertical stem -->
+    <path class="path-main" d="M0 16 
+      L8 16 
+      L8 144 
+      L0 144 
+      L0 16 Z"/>
+    <!-- Top bar with angle bracket terminals -->
+    <path class="path-main" d="M8 16 
+      L52 16 
+      L60 24 
+      L52 32 
+      L16 32 
+      L16 40 
+      L52 40 
+      L60 48 
+      L52 56 
+      L8 56 
+      L8 16 Z"/>
+    <!-- Middle bar - shorter, nested -->
+    <path class="path-main" d="M8 80 
+      L40 80 
+      L48 88 
+      L40 96 
+      L8 96 
+      L0 88 
+      L8 80 Z"/>
+  </g>
+</svg>
