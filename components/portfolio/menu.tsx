@@ -34,7 +34,7 @@ export function Menu() {
   return (
     <TooltipProvider delayDuration={0.15}>
       <nav
-        className="fixed bottom-4 left-1/2 z-40 w-[min(23rem,calc(100vw-2rem))] -translate-x-1/2 sm:bottom-6"
+        className="flex justify-center fixed bottom-4 left-1/2 z-40 w-[min(23rem,calc(100vw-2rem))] -translate-x-1/2 sm:bottom-6"
         aria-label="Primary navigation"
       >
         <Dock
