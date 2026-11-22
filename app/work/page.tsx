@@ -118,11 +118,22 @@ export default function WorkPage() {
                       <div className="relative grid items-stretch gap-0 md:grid-cols-[1fr_auto]">
                         <Link href={project.link} className="grid min-h-[13rem] gap-6 p-6 sm:p-8 lg:p-10" aria-label={`View ${project.title}`}>
                           <div className="flex items-start justify-between gap-6">
-                            <div className="flex items-center gap-4">
+                            {/* Mobile: icon + date same line, title below left-aligned */}
+                            <div className="flex flex-col gap-4 sm:hidden">
+                              <div className="flex items-center gap-4">
+                                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-border bg-background/70 text-brand-accent transition-transform duration-500 group-hover:-rotate-6 group-hover:scale-105">
+                                  <Icon className="h-5 w-5" aria-hidden="true" />
+                                </span>
+                                <p className="text-xs font-mono uppercase tracking-[0.22em] text-muted-foreground">{project.index} — {project.year}</p>
+                              </div>
+                              <h2 className="mt-4 text-xl font-medium leading-tight text-foreground transition-colors group-hover:text-brand-accent sm:text-2xl lg:text-3xl text-left">{project.title}</h2>
+                            </div>
+                            {/* Desktop/Tablet: icon left, date+title stacked on right */}
+                            <div className="hidden sm:flex items-center gap-4">
                               <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-xl border border-border bg-background/70 text-brand-accent transition-transform duration-500 group-hover:-rotate-6 group-hover:scale-105">
                                 <Icon className="h-5 w-5" aria-hidden="true" />
                               </span>
-                              <div>
+                              <div className="flex flex-col gap-2">
                                 <p className="text-xs font-mono uppercase tracking-[0.22em] text-muted-foreground">{project.index} — {project.year}</p>
                                 <h2 className="mt-2 text-xl font-medium leading-tight text-foreground transition-colors group-hover:text-brand-accent sm:text-2xl lg:text-3xl">{project.title}</h2>
                               </div>
