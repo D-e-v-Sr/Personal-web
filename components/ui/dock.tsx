@@ -1,6 +1,6 @@
 "use client";
 
-import React, { PropsWithChildren, useRef } from "react";
+import React, { PropsWithChildren, useEffect, useRef, useState } from "react";
 import { cva } from "class-variance-authority";
 import {
   motion,
@@ -44,6 +44,19 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
     },
     ref
   ) => {
+    const [isTouch, setIsTouch] = useState(false);
+
+    useEffect(() => {
+      const handleTouchStart = () => setIsTouch(true);
+      const handleMouseDown = () => setIsTouch(false);
+      window.addEventListener("touchstart", handleTouchStart, { passive: true });
+      window.addEventListener("mousedown", handleMouseDown, { passive: true });
+      return () => {
+        window.removeEventListener("touchstart", handleTouchStart);
+        window.removeEventListener("mousedown", handleMouseDown);
+      };
+    }, []);
+
     const mouseX = useMotionValue(Infinity);
 
     const renderChildren = () => {
@@ -57,7 +70,7 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
             mouseX: mouseX,
             size: iconSize,
             magnification: iconMagnification,
-            disableMagnification: disableMagnification,
+            disableMagnification: disableMagnification || isTouch,
             distance: iconDistance,
           });
         }
@@ -68,8 +81,9 @@ const Dock = React.forwardRef<HTMLDivElement, DockProps>(
     return (
       <motion.div
         ref={ref}
-        onMouseMove={(e) => mouseX.set(e.pageX)}
-        onMouseLeave={() => mouseX.set(Infinity)}
+        onPointerMove={(e) => mouseX.set(e.pageX)}
+        onPointerLeave={() => mouseX.set(Infinity)}
+        touch-action="manipulation"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8, ease: [0.25, 0.4, 0.25, 1] }}
@@ -131,15 +145,15 @@ const DockIcon = ({
     damping: 12,
   });
 
-  return (
-    <motion.div
-      ref={ref}
-      style={{ width: scaleSize, height: scaleSize, padding }}
-      className={cn(
-        "flex aspect-square cursor-pointer items-center justify-center rounded-full bg-background/50 hover:bg-muted transition-colors",
-        className
-      )}
-    >
+    return (
+      <motion.div
+        ref={ref}
+        style={{ width: scaleSize, height: scaleSize, padding, touchAction: "manipulation" }}
+        className={cn(
+          "flex aspect-square cursor-pointer items-center justify-center rounded-full bg-background/50 hover:bg-muted transition-colors",
+          className
+        )}
+      >
       <div className="flex items-center justify-center">{children}</div>
     </motion.div>
   );
