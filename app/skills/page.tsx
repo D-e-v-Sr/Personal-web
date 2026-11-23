@@ -225,7 +225,7 @@ export default function SkillsPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 2.3 }}
-              className="flex flex-col justify-between gap-4 border-t border-border py-6 sm:flex-row sm:items-center"
+              className="flex flex-col justify-between gap-4 border-t border-border py-6 sm:pb-6 pb-32 sm:flex-row sm:items-center"
             >
               <p className="text-sm text-muted-foreground">Full-stack, end-to-end, and always learning.</p>
               <p className="text-sm text-muted-foreground">Dubai, UAE</p>

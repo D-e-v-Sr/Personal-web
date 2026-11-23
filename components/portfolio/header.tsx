@@ -52,8 +52,6 @@ export function Header() {
           </Link>
 
           <div className="hidden items-center gap-4 md:flex">
-            <span className="text-[10px] uppercase tracking-[0.22em] text-muted-foreground">Dubai, UAE</span>
-            <span className="h-4 w-px bg-border" aria-hidden="true" />
             <span className="flex items-center gap-2 text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
               <span className="relative flex h-1.5 w-1.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-70" />

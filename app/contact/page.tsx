@@ -393,7 +393,7 @@ export default function ContactPage() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ duration: 0.6, delay: 1.4 }}
-              className="flex flex-col justify-between gap-4 border-t border-border py-6 sm:flex-row sm:items-center"
+              className="flex flex-col justify-between gap-4 border-t border-border py-6 sm:pb-6 pb-32 sm:flex-row sm:items-center"
             >
               <p className="text-sm text-muted-foreground">Designed and developed by Sharaf.</p>
               <div className="flex items-center gap-2 text-sm text-muted-foreground">
