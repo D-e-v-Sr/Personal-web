@@ -1,14 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { Resend } from "resend";
-import { z } from "zod";
-
-const contactSchema = z.object({
-  name: z.string().min(1, "Name is required"),
-  email: z.string().email("Invalid email"),
-  phone: z.string().min(1, "Phone number is required"),
-  subject: z.string().min(1, "Subject is required"),
-  message: z.string().min(10, "Message must be at least 10 characters"),
-});
+import { contactSchema, toFieldErrors } from "@/lib/validation";
 
 const escapeHtml = (value: string) =>
   value.replace(/[&<>"']/g, (character) => {
@@ -19,7 +11,6 @@ const escapeHtml = (value: string) =>
       '"': "&quot;",
       "'": "&#039;",
     };
-
     return entities[character];
   });
 
@@ -32,13 +23,24 @@ export async function POST(request: NextRequest) {
       return NextResponse.json(
         {
           error: "Invalid form data",
-          details: result.error.flatten(),
+          details: toFieldErrors(result.error.issues),
         },
         { status: 400 },
       );
     }
 
-    const { name, email, phone, subject, message } = result.data;
+    const {
+      name,
+      email,
+      company,
+      projectType,
+      budget,
+      timeline,
+      message,
+      whatsapp,
+      preferredMethod,
+    } = result.data;
+
     const resendApiKey = process.env.RESEND_API_KEY;
 
     if (!resendApiKey) {
@@ -62,12 +64,17 @@ export async function POST(request: NextRequest) {
       from: resendFromEmail,
       to: "sharafukp19@gmail.com",
       replyTo: email,
-      subject: `${subject} from ${name}`,
+      subject: `New project inquiry from ${name}`,
       html: `
         <p><strong>Name:</strong> ${escapeHtml(name)}</p>
         <p><strong>Email:</strong> ${escapeHtml(email)}</p>
-        <p><strong>Phone:</strong> ${escapeHtml(phone)}</p>
-        <p><strong>Subject:</strong> ${escapeHtml(subject)}</p>
+        <p><strong>Company:</strong> ${escapeHtml(company || "—")}</p>
+        <p><strong>Project Type:</strong> ${escapeHtml(projectType)}</p>
+        <p><strong>Budget:</strong> ${escapeHtml(budget || "—")}</p>
+        <p><strong>Timeline:</strong> ${escapeHtml(timeline || "—")}</p>
+        <p><strong>WhatsApp:</strong> ${escapeHtml(whatsapp || "—")}</p>
+        <p><strong>Preferred Contact:</strong> ${escapeHtml(preferredMethod || "—")}</p>
+        <hr />
         <p><strong>Message:</strong></p>
         <p>${escapeHtml(message).replace(/\n/g, "<br />")}</p>
       `,
