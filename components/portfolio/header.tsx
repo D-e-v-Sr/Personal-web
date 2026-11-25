@@ -52,6 +52,13 @@ export function Header() {
           </Link>
 
           <div className="hidden items-center gap-4 md:flex">
+            <a
+              href="/Sharaf-Cv.pdf"
+              download
+              className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-green-600 text-white text-xs font-medium hover:bg-green-500 transition-colors"
+            >
+              Download CV
+            </a>
             <span className="flex items-center gap-2 text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
               <span className="relative flex h-1.5 w-1.5">
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-70" />
