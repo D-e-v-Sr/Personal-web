@@ -9,7 +9,7 @@ import { MagneticButton } from "@/components/portfolio/magnetic-button";
 import { MacBookCode } from "@/components/portfolio/macbook-code";
 
 const capabilities = [
-  { icon: Layers, label: "Full-Stack" },
+  { icon: Layers, label: "Full-Stack Development" },
   { icon: Sparkles, label: "UI/UX" },
   { icon: Star, label: "Performance" },
 ];
