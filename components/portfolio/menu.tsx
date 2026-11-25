@@ -59,6 +59,7 @@ export function Menu() {
                   >
                     <Link
                       href={item.href}
+                      prefetch
                       aria-current={isActive ? "page" : undefined}
                       className="flex h-full w-full items-center justify-center rounded-full outline-none focus-visible:ring-2 focus-visible:ring-brand-accent focus-visible:ring-offset-2 focus-visible:ring-offset-background"
                     >

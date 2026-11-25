@@ -6,6 +6,7 @@ import { ArrowUpRight, ArrowDown, Star, Layers, Sparkles } from "lucide-react";
 import { Header } from "@/components/portfolio/header";
 import { PageTransition, FadeUp, TextReveal } from "@/components/portfolio/page-transition";
 import { MagneticButton } from "@/components/portfolio/magnetic-button";
+import { MacBookCode } from "@/components/portfolio/macbook-code";
 
 const capabilities = [
   { icon: Layers, label: "Full-Stack" },
@@ -30,26 +31,20 @@ export default function HomePage() {
             style={{ animationDelay: "3s" }}
           />
 
-          <section aria-label="Hero" className="relative z-10 flex-1 flex flex-col justify-center max-w-6xl">
-            <div className="space-y-8">
-              <FadeUp>
-                <p className="text-muted-foreground text-sm md:text-base tracking-[0.25em] uppercase font-mono">
-                  Full Stack Developer
-                </p>
-              </FadeUp>
-
+          <section aria-label="Hero" className="relative z-10 flex-1 flex flex-col lg:flex-row items-center justify-between gap-12">
+            <div className="space-y-8 max-w-2xl">
               <div className="space-y-2">
                 <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold tracking-tighter leading-[1] sm:leading-[0.85]">
                   <div>
-                    <TextReveal delay={0.1}>Crafting</TextReveal>
+                    <TextReveal delay={0.1}>Building</TextReveal>
                   </div>
                   <div>
                     <TextReveal delay={0.2}>
-                      <span className="text-muted-foreground italic font-light">digital</span>
+                      <span className="text-muted-foreground italic font-light">Digital</span>
                     </TextReveal>
                   </div>
                   <div>
-                    <TextReveal delay={0.3}>experiences.</TextReveal>
+                    <TextReveal delay={0.3}>Experiences.</TextReveal>
                   </div>
                 </h1>
               </div>
@@ -102,6 +97,7 @@ export default function HomePage() {
                 </div>
               </FadeUp>
             </div>
+            <MacBookCode />
           </section>
 
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8 mt-16 relative z-10">

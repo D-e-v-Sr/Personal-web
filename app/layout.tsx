@@ -54,8 +54,8 @@ export default function RootLayout({
         <div id="site-content">
           <ThemeProvider
             attribute="class"
-            defaultTheme="system"
-            enableSystem
+            defaultTheme="dark"
+            enableSystem={false}
             disableTransitionOnChange={false}
           >
             {children}
